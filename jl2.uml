@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="0.0">me.wenchao.designschema.observer.NumberGenerator</node>
+    <node x="160.0" y="307.0">me.wenchao.designschema.observer.DigitObserver</node>
+    <node x="336.0" y="226.0">me.wenchao.designschema.observer.MainApp</node>
+    <node x="0.0" y="307.0">me.wenchao.designschema.observer.GraphObserver</node>
+    <node x="14.5" y="104.0">me.wenchao.designschema.observer.RandomNumberGenerator</node>
+    <node x="93.75" y="226.0">me.wenchao.designschema.observer.IObserver</node>
+    <node x="0.0" y="383.0">me.wenchao.designschema.strategy.TestO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="me.wenchao.designschema.observer.RandomNumberGenerator" target="me.wenchao.designschema.observer.NumberGenerator">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="me.wenchao.designschema.observer.DigitObserver" target="me.wenchao.designschema.observer.IObserver">
+      <point x="0.0" y="-15.5" />
+      <point x="225.5" y="282.0" />
+      <point x="174.75" y="282.0" />
+      <point x="27.0" y="15.5" />
+    </edge>
+    <edge source="me.wenchao.designschema.observer.GraphObserver" target="me.wenchao.designschema.observer.IObserver">
+      <point x="0.0" y="-15.5" />
+      <point x="70.0" y="282.0" />
+      <point x="120.75" y="282.0" />
+      <point x="-27.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="264.5" y="214.49999999999997" />
+  <SelectedNodes>
+    <node>me.wenchao.designschema.observer.MainApp</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

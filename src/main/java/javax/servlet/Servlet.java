@@ -86,24 +86,6 @@ public interface Servlet {
      * @see #getServletConfig
      */
     public void init(ServletConfig config) throws ServletException;
-
-    /**
-     *
-     * Returns a {@link ServletConfig} object, which contains initialization and
-     * startup parameters for this servlet. The <code>ServletConfig</code>
-     * object returned is the one passed to the <code>init</code> method.
-     *
-     * <p>
-     * Implementations of this interface are responsible for storing the
-     * <code>ServletConfig</code> object so that this method can return it. The
-     * {@link GenericServlet} class, which implements this interface, already
-     * does this.
-     *
-     * @return the <code>ServletConfig</code> object that initializes this
-     *         servlet
-     *
-     * @see #init
-     */
     public ServletConfig getServletConfig();
 
     /**

@@ -9,8 +9,8 @@ public class Car implements MoveAble{
     public void move(){
 
         try {
-            Thread.sleep(1000);
             System.out.println("汽车行驶中......");
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
