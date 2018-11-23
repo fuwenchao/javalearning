@@ -14,7 +14,7 @@ public class BinarySearchUtil {
     private static <T> int binarySearch(T[] t, T k, Comparator<T> comp) {
         int low = 0;
         int high = t.length - 1;
-        while (low < high) {
+        while (low <= high) {
             int mid = (low + high) >>> 1;
             int compare = comp.compare(t[mid], k);
             if (compare < 0) {
@@ -34,7 +34,8 @@ public class BinarySearchUtil {
 
     private static <T extends Comparable<T>> int binarySearch(T[] t, int low, int high, T key) {
         if (low < high) {
-            int mid = low + ((high - low) >>> 2);
+            // 这种方式可以解决 int 相加越界问题
+            int mid = low + ((high - low) >>> 2);  // (low + high) / 2 （这样做有bug）
             int compare = key.compareTo(t[mid]);
             if (compare == 0) {
                 return mid;

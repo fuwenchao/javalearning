@@ -1,5 +1,7 @@
 package me.wenchao.javapro.reflection;
 
+import java.util.List;
+
 /**
  * @Author wenchaofu
  * @DATE 17:09 2018/4/30
@@ -8,7 +10,8 @@ package me.wenchao.javapro.reflection;
 public class DynamicLoad {
     public static void main(String[] args) {
         String s = "334";
-        ClassUtil.printObjectMessage(s);
+        ABC abc = new ABC();
+        ClassUtil.printObjectMessage(abc);
         try{
             //动态加载类，在运行时刻加载类
             if(args.length>0) {
@@ -22,5 +25,13 @@ public class DynamicLoad {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+}
+
+
+
+class ABC {
+    public void test(List<String> stringList) {
+        System.out.println("in method");
     }
 }

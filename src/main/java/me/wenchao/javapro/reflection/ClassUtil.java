@@ -1,7 +1,7 @@
 package me.wenchao.javapro.reflection;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
+import java.lang.reflect.*;
+import java.util.List;
 
 /**
  * @Author wenchaofu
@@ -33,6 +33,12 @@ public class ClassUtil {
             }
             System.out.println(")");
 
+            System.out.println("===========");
+            Type[] parameters = declaredMethod.getGenericParameterTypes();
+
+            for (Type parameter : parameters) {
+                System.out.println(((ParameterizedType) parameter).getTypeName());
+            }
         }
 
 

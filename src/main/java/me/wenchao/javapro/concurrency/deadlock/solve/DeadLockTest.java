@@ -14,7 +14,9 @@ public class DeadLockTest {
 //    private static Lock lock = new ReentrantLock();
 
     public static class A {
+
         private static Lock lock = new ReentrantLock();
+
         public static void a1() throws InterruptedException {
             try{
                 if(lock.tryLock(5,TimeUnit.SECONDS)) {
